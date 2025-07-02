@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Gianna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="globos.png" alt="Imagen Globos" class="imagen">
+  <img src="globos.png" alt="Imagen Globos 2" class="imagen2">
+  <div class="invitacion">
+    <div class="titulo">Birthday Party</div>
+    <div class="edad">#27</div>
+    <h1 class="name">Gianna</h1>
+    <div class="fecha">
+      <div>Sab</div>
+      <div>|</div>
+      <div>19 Julio</div>
+      <div>|</div>
+      <div>19h00</div>
+    </div>
+    <a href="https://maps.app.goo.gl/waBxBTLW59i9sf6T8" target="_blank"><div class="direccion">
+      <strong>Dirección:</strong> Sangolquí, Colegio Lev Vygotsky
+    </div></a>
+    <div class="confirmar">
+      Confirma la asistencia en el siguiente link<br>
+      (333) 477 1536
+    </div>
+    <div class="esperamos">¡Importante!</div>
+
+    <div class="importante">
+      <div class="importante2">
+        <p>Dress Code</p>
+          <ul>
+            <li>Negro</li>
+            <li>Blanco</li>
+            <li>Plateado</li>
+            <li>Mucho Brillito</li>
+          </ul>  
+      </div>
+      <div class="importante2">
+        <p>Bebida</p>
+          <span class="por_pareja">Por pareja o grupo</span>
+          <ul>
+            <li>Agua Ardiente</li>
+            <li>Tequila</li>
+            <li>Cervecitas</li>
+          </ul>  
+       
+      </div>
+    </div>
+
+    <div class="recordatorio">
+      No olvides el detalle para la Cumpleañera
+    </div>
+  </div>
+
+  <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+</body>
+</html>

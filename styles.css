@@ -1,0 +1,223 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://img.freepik.com/foto-gratis/fondo-metalico-tonalidad-oro-rosa_1048-9744.jpg?semt=ais_hybrid&w=740');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .invitacion {
+      width: 80vw;
+      max-height: 80vh;
+      max-width: 380px;
+      background: rgba(231,178,164, 0.4);
+      border-radius: 20px;
+      padding: 8vh 5vw;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+      overflow-y: scroll;
+      scrollbar-width: none; 
+      
+    }
+
+    .titulo {
+      font-size: 5vw;
+      margin-bottom: 3vh;
+      font-family: 'MiFuentePersonalizada';
+      line-height: 1;
+      font-weight: lighter;
+    }
+
+    .edad {
+      font-size: 16vw;
+      color: #6d4c41;
+      font-weight: bold;
+      font-family: '';
+    }
+
+    h1 {
+      font-family: 'MiFuentePersonalizada';
+      font-size: 10vw;
+      margin: 0 0 4vh;
+      line-height: 1.35;
+      font-weight: lighter;
+
+    }
+
+    .fecha {
+      background: rgba(255, 255, 255, 0.25);
+      color: #6d4c41;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: '';
+      display: flex;
+      justify-content: space-around;
+      padding: 2vh 0;
+      margin-bottom: 2vh;
+      font-size: 4.5vw;
+    }
+
+    .direccion {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #6d4c41;
+      font-family: '';
+      padding: 2vh 2vw;
+      margin-bottom: 2vh;
+      border-radius: 5px;
+      font-size: 4vw;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .confirmar {
+      font-size: 3.7vw;
+      color: #333;
+      margin-bottom: 2vh;
+      
+    }
+
+    .esperamos {
+      font-family: '';
+      font-size: 6vw;
+      color: white;
+    }
+
+    .importante{
+      color: #6d4c41;
+      margin-bottom: 2vh;
+      display: flex;
+    }
+
+    .importante2 {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #6d4c41;
+      justify-content: center;
+      margin: 5px;
+      
+    }
+
+    .importante2 ul {
+      text-align: justify;
+    }
+
+    .imagen {
+      height: 30%;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      animation: moverHorizontal2 10s infinite; /* Animación de crecimiento y encogimiento */
+    }
+
+    p {
+      font-size: 3.5vw;
+      font-weight: bold;
+      color: #6d4c41;
+      font-family: 'MiFuentePersonalizada';
+      margin: 0;
+      padding: 0;
+    }
+    
+    .recordatorio{
+      background: #6d4c41bb;
+      color: #ffffff;
+      font-family: '';
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 2vh 0;
+      font-size: 4.5vw;
+    }
+    
+
+    .imagen2 {
+      height: 30%;
+      position: absolute;
+      bottom: 0px;
+      right: -10px;
+      transform: scaleX(-1);
+      animation: moverHorizontal 10s infinite; /* Animación de crecimiento y encogimiento */
+    }
+
+    .direccion:hover {
+      background-color: rgba(255, 255, 255, 0.40);
+    }
+
+    .direccion:visited {
+      text-decoration: none;
+    }
+
+    
+
+    @keyframes moverHorizontal {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px); /* se mueve a la derecha */
+      }
+      100% {
+        transform: translateX(0); /* regresa al inicio */
+      }
+    }
+
+    @keyframes moverHorizontal2 {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-50px); /* se mueve a la derecha */
+      }
+      100% {
+        transform: translateX(0); /* regresa al inicio */
+      }
+    }
+    
+    /* Landscape phones y tablets */
+    @media (min-width: 768px) {
+      .titulo { font-size: 20px; }
+      .edad { font-size: 50px; }
+      h1 { font-size: 48px; }
+      .imagen {height: 90%;
+      top: 10px;
+      left: 10%;}
+      p {
+        font-size: 18px;
+      }
+      .imagen2 {height: 90%;
+      top: 10px;
+      right: 10%;}
+      .fecha, .direccion { font-size: 18px; }
+      .confirmar { font-size: 16px; }
+      .esperamos { font-size: 22px; }
+      .importante { font-size: 22px; justify-content: center;}
+      .importante2 ul {font-size: 16px;}
+      .recordatorio { font-size: 18px; }
+      p{font-size: 16px;}
+      .por_pareja{
+        font-size: 16px;
+      }
+    }
+    @font-face {
+      font-family: 'MiFuentePersonalizada';
+      src: url('AmsterdamOne-eZ12l.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    
+
+    
+
+    
+
