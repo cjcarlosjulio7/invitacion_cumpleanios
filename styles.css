@@ -120,6 +120,15 @@
       animation: moverHorizontal2 10s infinite; /* Animación de crecimiento y encogimiento */
     }
 
+    .imagen2 {
+      height: 30%;
+      position: absolute;
+      bottom: 0px;
+      right: -10px;
+      transform: scaleX(-1);
+      animation: moverHorizontal 10s infinite; /* Animación de crecimiento y encogimiento */
+    }
+
     p {
       font-size: 3.5vw;
       font-weight: bold;
@@ -140,14 +149,7 @@
     }
     
 
-    .imagen2 {
-      height: 30%;
-      position: absolute;
-      bottom: 0px;
-      right: -10px;
-      transform: scaleX(-1);
-      animation: moverHorizontal 10s infinite; /* Animación de crecimiento y encogimiento */
-    }
+    
 
     .direccion:hover {
       background-color: rgba(255, 255, 255, 0.40);
