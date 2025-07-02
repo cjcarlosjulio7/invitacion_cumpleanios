@@ -82,9 +82,10 @@
     }
 
     .confirmar {
-      font-size: 3.7vw;
-      color: #333;
+      font-size: 3.5vw;
+      color: #6d4c41;
       margin-bottom: 2vh;
+      font-family: '';
       
     }
 
@@ -123,8 +124,8 @@
     .imagen2 {
       height: 30%;
       position: absolute;
-      bottom: 0px;
-      right: -10px;
+      bottom: -10px;
+      right: -20px;
       transform: scaleX(-1);
       animation: moverHorizontal 10s infinite; /* Animación de crecimiento y encogimiento */
     }
@@ -139,15 +140,52 @@
     }
     
     .recordatorio{
-      background: #6d4c41bb;
-      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.35);
+      color: #6d4c41;
       font-family: '';
-      font-weight: bold;
+      font-weight: lighter;
       border-radius: 5px;
       padding: 2vh 0;
       font-size: 4.5vw;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+
     }
     
+    .gold-button {
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 12px;
+      background: linear-gradient(
+       130deg,
+      #c1995b,     /* base dorada cálida */
+      #f5e4b2,     /* luz suave satinada */
+      #b57e30,     /* tono medio dorado */
+      #fff3d1,     /* reflejo blanco cálido */
+      #b57e30      /* sombra dorada oscura */
+      );
+      background-size: 200% auto;
+      color: #463129;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+      animation: shine 7s linear infinite;
+      border: none;
+      font-size: 18px;
+      transition: transform 10s;
+    }
+
+    .gold-button:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes shine {
+      0% {
+        background-position: 100% center;
+      }
+      100% {
+        background-position: -100% center;
+      }
+    }
 
     
 
