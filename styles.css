@@ -153,10 +153,10 @@
       background-color: rgba(255, 255, 255, 0.40);
     }
 
-    .direccion:visited {
+    a {
       text-decoration: none;
+      color: inherit;
     }
-
     
 
     @keyframes moverHorizontal {
